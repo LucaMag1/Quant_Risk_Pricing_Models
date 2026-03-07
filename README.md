@@ -5,7 +5,7 @@ The projects demonstrate practical applications of statistical modelling and mac
 
 ## Projects
 
-- **Commodity Storage Pricing Model**– valuation of a natural gas storage contract using commodity price curves and operational constraints.
-- **Loan Default Probability Model** – logistic regression model estimating probability of default and expected loss for a loan portfolio.
+- **Commodity Storage Model** – simulates gas injection dynamics and storage capacity constraints to model inventory levels over time.
+- **Commodity Pricing Model** – values a natural gas storage contract using commodity price spreads, injection/withdrawal timing, and storage costs.
 - **FICO Credit Rating Buckets** – quantization of FICO scores into credit rating bands with estimated default probabilities.
 - **Volatility Clustering Analysis** – analysis of volatility clustering in financial return series.
