@@ -1,4 +1,4 @@
-# Quant-Risk-Pricing-Models
+# Quant_Risk_Pricing_Models
 
 This repository contains several quantitative finance models implemented in Python, covering commodity pricing, credit risk modelling, and volatility analysis.
 The projects demonstrate practical applications of statistical modelling and machine learning to financial datasets.
