@@ -1,16 +1,15 @@
 
 import pandas as pd
-
+from pathlib import Path
 # =====================================
-# 1. IMPORT AND CLEAN BLOOMBERG DATA
+# 1. IMPORT DATA
 # =====================================
 
-df = pd.read_csv(
-    r"C:\Users\lucam\Downloads\Bloomberg DS(Price DS).csv"
-)
+data_file = Path(__file__).resolve().parent / "data" / "prices.csv"
+df = pd.read_csv(data_file)
 
 df.rename(columns={df.columns[0]: "Date"}, inplace=True)
-df["Date"] = pd.to_datetime(df["Date"], format="%d-%b-%y")
+df["Date"] = pd.to_datetime(df["Date"], format="mixed", dayfirst=True)
 df.set_index("Date", inplace=True)
 
 df = df.apply(pd.to_numeric, errors="coerce")
@@ -161,13 +160,14 @@ for name in periods:
 
 
 # =====================================
-# 6. SAVE RESULTS TO EXCEL
+# 6. SAVE RESULTS TO CSV
 # =====================================
 
-#top_20.to_csv(
-#    r"C:\Users\lucam\Downloads\October_Momentum_Top7.csv"
-#)
-#print("\nResults saved to Downloads!")
+output_file = Path(__file__).resolve().parent / "momentum_top20.csv"
+
+top_20.to_csv(output_file, index=False)
+
+print(f"\nResults saved to: {output_file}")
 
 
 # =====================================
