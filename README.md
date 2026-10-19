@@ -5,7 +5,7 @@ The projects demonstrate practical applications of statistical modelling and mac
 
 ## Projects
 
-- **Bloomberg Global Trading Challenge** – python-based screening of 500+ equities using momentum, volatility, and return consistency.
+- **Bloomberg Global Trading Challenge** – python-based screening of 500+ equities using momentum, volatility, and return consistency. [Setup & methodology](BLOOMBERG_GUIDE.md)
 - **Commodity Storage Model** – simulates gas injection dynamics and storage capacity constraints to model inventory levels over time.
 - **Commodity Pricing Model** – values a natural gas storage contract using commodity price spreads, injection/withdrawal timing, and storage costs.
 - **Loan Default Probability Model** – logistic regression model estimating probability of default (PD) and expected loss for a loan portfolio.
